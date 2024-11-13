@@ -1,10 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { Home } from './pages/Home'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from './styles/global'
 import theme from './styles/theme'
-import { SignIn } from './pages/SignIn'
+import { SignUp } from './pages/SignUp'
 
 /* 
 
@@ -26,14 +25,22 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
-*/
-
 createRoot(document.getElementById('root')).render(
   <StrictMode >
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <SignIn />
     </ThemeProvider>
-  </StrictMode>,
+  </StrictMode>
+
+*/
+createRoot(document.getElementById('root')).render(
+  <StrictMode >
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <SignUp />
+    </ThemeProvider>
+  </StrictMode>
+
 )
 
